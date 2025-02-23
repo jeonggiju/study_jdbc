@@ -19,7 +19,6 @@ public class MemberServiceV1 {
         memberRepository.update(fromId, fromMember.getMoney() - money);
         this.validation(toMember);
         memberRepository.update(toId, fromMember.getMoney() + money);
-
     }
     
     private void validation(Member toMember){
